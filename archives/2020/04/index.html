@@ -30,8 +30,6 @@
     <link rel="icon" href="/favicon.ico">
   
   
-    <link rel="apple-touch-icon" href="/apple-touch-icon-180x180.png">
-  
   <link rel="stylesheet" type="text/css" href="/./main.a5fda8.css">
   <style type="text/css">
     
@@ -49,7 +47,7 @@
 
   
     <script src="/lib/pace.min.js"></script>
-    <link href="//cdn.bootcss.com/pace/1.0.2/themes/blue/pace-theme-minimal.css" rel="stylesheet">
+    <link href="//cdn.bootcss.com/pace/1.0.2/themes/silver/pace-theme-minimal.css" rel="stylesheet">
   
 
 </head>
@@ -555,7 +553,7 @@
         <ul class="search-ul">
           
             <li class="search-li">
-              <a href="/null" target="_blank" class="search-title" title="记录工作和学习过程中的笔记：Java、前端开发、Hexo博客、聚合支付、Linux笔记、ElasticSearch、ELK日志分析">
+              <a href="/null" target="_blank" class="search-title" >
                 
                   <i class="icon-link icon"></i>
                 
@@ -654,6 +652,35 @@
   </div>
 
   
+<script type="text/javascript" src="/plugins/TweenMax/TweenMax.min.js"></script>
+<script type="text/javascript" src="/plugins/TweenMax/HoverImg.js"></script>
+
+<script>
+
+
+  var hoverEffect = {
+    "subNav": ".left-col .social a"
+  }
+
+
+  for (var x in hoverEffect) {
+    // 初始化data-img属性值
+    let $em = document.querySelectorAll(hoverEffect[x]);
+    $em.forEach(($a) => {
+      //console.log($a.href);
+      if (isImageType($a.href)) {
+        $a.setAttribute("data-img", $a.href)
+      }
+    })
+    // 实现悬停元素预览图片效果
+    let $a = document.querySelectorAll(hoverEffect[x] + "[data-img]");
+    $a.forEach(($em) => {
+      new HoverImgFx1($em)
+    })
+  }
+
+</script>
+
   
 <script type="text/javascript" src="/plugins/activate-power-mode/activate-power-mode.js"></script>
 <script>
@@ -716,16 +743,6 @@
 </script>
 
   
-  
-  <script type="text/javascript" src="/lib/snow.js"></script>
-  <script type="text/javascript" src="/lib/jquery-2.1.4.min.js"></script>
-  <script>
-    snow.down();
-    $(window).resize(function() {
-      $("canvas").css("z-index","500").remove();
-      snow.down();
-    });
-  </script>
   
 </body>
 

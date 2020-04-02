@@ -29,8 +29,6 @@
     <link rel="icon" href="/favicon.ico">
   
   
-    <link rel="apple-touch-icon" href="/apple-touch-icon-180x180.png">
-  
   <link rel="stylesheet" type="text/css" href="/./main.a5fda8.css">
   <style type="text/css">
     
@@ -48,7 +46,7 @@
 
   
     <script src="/lib/pace.min.js"></script>
-    <link href="//cdn.bootcss.com/pace/1.0.2/themes/blue/pace-theme-minimal.css" rel="stylesheet">
+    <link href="//cdn.bootcss.com/pace/1.0.2/themes/silver/pace-theme-minimal.css" rel="stylesheet">
   
 
 </head>
@@ -295,58 +293,6 @@
     
 
     
-    
-<div class="share-btn share-icons tooltip-left">
-  <div class="tooltip tooltip-east">
-    <span class="tooltip-item">
-      <a href="javascript:;" class="share-sns share-outer">
-        <i class="icon icon-share"></i>
-      </a>
-    </span>
-    <span class="tooltip-content">
-      <div class="share-wrap">
-        <div class="share-icons">
-          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
-            <i class="icon icon-weibo"></i>
-          </a>
-          <!-- <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
-            <i class="icon icon-weixin"></i>
-          </a> -->
-          <a class="qq share-sns" href="javascript:;" data-type="qq">
-            <i class="icon icon-qq"></i>
-          </a>
-          <a class="douban share-sns" href="javascript:;" data-type="douban">
-            <i class="icon icon-douban"></i>
-          </a>
-          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
-            <i class="icon icon-qzone"></i>
-          </a>
-          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
-            <i class="icon icon-facebook"></i>
-          </a>
-          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
-            <i class="icon icon-twitter"></i>
-          </a>
-          <a class="google share-sns" href="javascript:;" data-type="google">
-            <i class="icon icon-google"></i>
-          </a>
-        </div>
-      </div>
-    </span>
-  </div>
-</div>
-
-<div class="page-modal wx-share js-wx-box">
-    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
-    <p>扫一扫，分享到微信</p>
-    <div class="wx-qrcode">
-     <!-- <img src="//pan.baidu.com/share/qrcode?url=https://hoopoe-h.github.io/2020/03/16/%E6%90%AD%E5%BB%BAhexo%E5%8D%9A%E5%AE%A2%E6%A1%86%E6%9E%B6/" alt="微信分享二维码"> -->
-    </div>
-</div>
-
-<div class="mask js-mask"></div>
-
-    
     <div class="clearfix"></div>
   </div>
   </div>
@@ -583,7 +529,7 @@
         <ul class="search-ul">
           
             <li class="search-li">
-              <a href="/null" target="_blank" class="search-title" title="记录工作和学习过程中的笔记：Java、前端开发、Hexo博客、聚合支付、Linux笔记、ElasticSearch、ELK日志分析">
+              <a href="/null" target="_blank" class="search-title" >
                 
                   <i class="icon-link icon"></i>
                 
@@ -682,6 +628,35 @@
   </div>
 
   
+<script type="text/javascript" src="/plugins/TweenMax/TweenMax.min.js"></script>
+<script type="text/javascript" src="/plugins/TweenMax/HoverImg.js"></script>
+
+<script>
+
+
+  var hoverEffect = {
+    "subNav": ".left-col .social a"
+  }
+
+
+  for (var x in hoverEffect) {
+    // 初始化data-img属性值
+    let $em = document.querySelectorAll(hoverEffect[x]);
+    $em.forEach(($a) => {
+      //console.log($a.href);
+      if (isImageType($a.href)) {
+        $a.setAttribute("data-img", $a.href)
+      }
+    })
+    // 实现悬停元素预览图片效果
+    let $a = document.querySelectorAll(hoverEffect[x] + "[data-img]");
+    $a.forEach(($em) => {
+      new HoverImgFx1($em)
+    })
+  }
+
+</script>
+
   
 <script type="text/javascript" src="/plugins/activate-power-mode/activate-power-mode.js"></script>
 <script>
@@ -744,16 +719,6 @@
 </script>
 
   
-  
-  <script type="text/javascript" src="/lib/snow.js"></script>
-  <script type="text/javascript" src="/lib/jquery-2.1.4.min.js"></script>
-  <script>
-    snow.down();
-    $(window).resize(function() {
-      $("canvas").css("z-index","500").remove();
-      snow.down();
-    });
-  </script>
   
 </body>
 
