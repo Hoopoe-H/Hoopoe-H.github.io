@@ -184,6 +184,174 @@
             
 
   
+    <article id="post-6-分支管理" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+  
+  
+    <h1 itemprop="name">
+	
+	  <a class="article-title" href="/2020/04/02/6-%E5%88%86%E6%94%AF%E7%AE%A1%E7%90%86/" target="_blank">6.分支管理</a>
+  
+    </h1>
+  
+
+
+  
+  
+<a href="/2020/04/02/6-%E5%88%86%E6%94%AF%E7%AE%A1%E7%90%86/" class="archive-article-date">
+        <time datetime="2020-04-02T09:31:02.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-02</time>
+</a>
+
+  
+  
+    
+
+  
+  </header>
+  
+  <div class="article-entry" itemprop="articleBody">
+    
+    <h2 id="分支管理"><a href="#分支管理" class="headerlink" title="分支管理"></a>分支管理</h2><h4 id="1-什么是分支？"><a href="#1-什么是分支？" class="headerlink" title="1. 什么是分支？"></a>1. 什么是分支？</h4><p>在版本控制过程中，使用对条线同时推进多个任务。</p>
+<h4 id="2-分支的好处"><a href="#2-分支的好处" class="headerlink" title="2. 分支的好处"></a>2. 分支的好处</h4><ul>
+<li><p>同时并行推进多个功能开发，提高开发效率</p>
+</li>
+<li><p>各个分支在开发过程中，如果某一个分支开发失败，不会对其他分支有任何影响。失败的分支删除重新开始即可。</p>
+<h4 id="3-分支操作"><a href="#3-分支操作" class="headerlink" title="3. 分支操作"></a>3. 分支操作</h4></li>
+<li><p><strong>创建分支</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git branch [分支名]</span><br></pre></td></tr></table></figure>
+<p><a href="https://imgchr.com/i/GYSNWV" target="_blank" rel="noopener"><img src="https://s1.ax1x.com/2020/04/02/GYSNWV.png" alt="GYSNWV.png"></a></p>
+</li>
+<li><p><strong>创建并切换到新分支</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git checkout -b [newBranch]</span><br></pre></td></tr></table></figure>
+</li>
+<li><p><strong>查看分支名</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git branch -v</span><br></pre></td></tr></table></figure>
+<p><a href="https://imgchr.com/i/GYStJ0" target="_blank" rel="noopener"><img src="https://s1.ax1x.com/2020/04/02/GYStJ0.png" alt="GYStJ0.png"></a><br>有两个分支，<code>hot_fix</code>和<code>master</code>，我们目前在 <code>master</code> 分支</p>
+</li>
+<li><p><strong>切换分支名</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git checkout [分支名]</span><br></pre></td></tr></table></figure>
+<p><a href="https://imgchr.com/i/GYSdQU" target="_blank" rel="noopener"><img src="https://s1.ax1x.com/2020/04/02/GYSdQU.png" alt="GYSdQU.png"></a></p>
+</li>
+<li><p><strong>合并分支</strong></p>
+<ul>
+<li>第一步：切换到接受修改的分支(被合并的分支，增加新内容)上  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git checkout [被合并的分支名(主)]</span><br></pre></td></tr></table></figure></li>
+<li>第二步：执行 merge 命令  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git merge [要合并过来的分支名]</span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+<li><p><strong>解决冲突</strong><br>在不同分支修改同一文件之后合并，出现冲突<br><a href="https://imgchr.com/i/GYSUzT" target="_blank" rel="noopener"><img src="https://s1.ax1x.com/2020/04/02/GYSUzT.png" alt="GYSUzT.png"></a><br>自动合并失败，转为手动合并</p>
+<ul>
+<li>冲突的表现<br><a href="https://imgchr.com/i/GYSYiq" target="_blank" rel="noopener"><img src="https://s1.ax1x.com/2020/04/02/GYSYiq.png" alt="GYSYiq.png"></a></li>
+<li>冲突的解决<ul>
+<li>第一步：编辑文件，删除特殊符号</li>
+<li>第二步：把文件修改到满意的程度，保存退出</li>
+<li>第三步：<code>git add [文件名]</code></li>
+<li>第四步：<code>git commit -m &quot;日志信息&quot;</code><ul>
+<li><strong>注意：此时的 <code>commit</code> 一定不能带具体文件名</strong></li>
+</ul>
+</li>
+<li>图示： <ul>
+<li><ol>
+<li>删除特殊符号<br><a href="https://imgchr.com/i/GYSwyF" target="_blank" rel="noopener"><img src="https://s1.ax1x.com/2020/04/02/GYSwyF.png" alt="GYSwyF.png"></a></li>
+</ol>
+</li>
+<li><ol start="2">
+<li>修改值理想状态，保存退出<br><a href="https://imgchr.com/i/GYScJx" target="_blank" rel="noopener"><img src="https://s1.ax1x.com/2020/04/02/GYScJx.png" alt="GYScJx.png"></a></li>
+</ol>
+</li>
+<li><ol start="3">
+<li>查看状态<br><a href="https://imgchr.com/i/GYSzwj" target="_blank" rel="noopener"><img src="https://s1.ax1x.com/2020/04/02/GYSzwj.png" alt="GYSzwj.png"></a><br>提示：仍为合并，需要用 <code>git add [文件名]</code> 进行合并</li>
+</ol>
+</li>
+<li><ol start="4">
+<li>执行 <code>git add</code> 命令之后再次查看状态<br><a href="https://imgchr.com/i/GYpEXF" target="_blank" rel="noopener"><img src="https://s1.ax1x.com/2020/04/02/GYpEXF.png" alt="GYpEXF.png"></a></li>
+</ol>
+</li>
+<li><ol start="5">
+<li>执行 <code>git commit</code>不能带文件名，否则报错，如下图<br><a href="https://imgchr.com/i/GYpZm4" target="_blank" rel="noopener"><img src="https://s1.ax1x.com/2020/04/02/GYpZm4.png" alt="GYpZm4.png"></a></li>
+</ol>
+</li>
+<li><ol start="6">
+<li>正确执行合并冲突的 <code>commit</code> 命令<br><code>例：git commit -m &quot;解决 apple.txt 的冲突&quot;</code><br><a href="https://imgchr.com/i/GYCtJI" target="_blank" rel="noopener"><img src="https://s1.ax1x.com/2020/04/02/GYCtJI.png" alt="GYCtJI.png"></a></li>
+</ol>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>在本地新建一个分支： <code>git branch newBranch</code></p>
+<p>切换到你的新分支: <code>git checkout newBranch</code></p>
+<p>创建并切换到新分支： <code>git checkout -b newBranch</code></p>
+<p>将新分支发布在github上： <code>git push origin newBranch</code></p>
+<p>在本地删除一个分支： <code>git branch -d newBranch</code></p>
+</blockquote>
+<blockquote>
+<p>在github远程端删除一个分支： <code>git push origin :newBranch</code>   (分支名前的冒号代表删除)</p>
+</blockquote>
+<blockquote>
+<p>使用Git下载指定分支命令为：<code>git clone -b [分支名] [仓库地址]</code></p>
+</blockquote>
+
+    
+
+    
+
+    
+
+  </div>
+  <div class="article-info article-info-index">
+    
+    
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">Git</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+    
+
+    
+    <p class="article-more-link">
+      <a class="article-more-a" href="/2020/04/02/6-%E5%88%86%E6%94%AF%E7%AE%A1%E7%90%86/">展开全文 >></a>
+    </p>
+    
+
+    
+    <div class="clearfix"></div>
+  </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-5-比较文件差异" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     

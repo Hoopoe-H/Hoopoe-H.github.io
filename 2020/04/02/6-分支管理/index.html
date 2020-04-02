@@ -6,22 +6,34 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://hoopoe-h.github.io">
-  <title>5.比较文件差异 | Hoopoe</title>
+  <title>6.分支管理 | Hoopoe</title>
   <meta name="generator" content="hexo-theme-yilia-plus">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
-  <meta name="description" content="比较文件差异1.  git diff [文件名] 将工作区中的文件和暂存区对应文件进行比较 1例：git diff test.txt  2.  git diff [本地库中文件历史记录(指针)] [文件名] 将工作区中的文件和本地库历史记录比较 1234例：git diff HEAD test.txt  比较最新一次修改git diff HEAD^ text.txt 比较上一次修改git diff">
+  <meta name="description" content="分支管理1. 什么是分支？在版本控制过程中，使用对条线同时推进多个任务。 2. 分支的好处 同时并行推进多个功能开发，提高开发效率  各个分支在开发过程中，如果某一个分支开发失败，不会对其他分支有任何影响。失败的分支删除重新开始即可。 3. 分支操作 创建分支 1git branch [分支名]   创建并切换到新分支 1git checkout -b [newBranch]  查看分支名 1gi">
 <meta property="og:type" content="article">
-<meta property="og:title" content="5.比较文件差异">
-<meta property="og:url" content="https://hoopoe-h.github.io/2020/04/02/5-%E6%AF%94%E8%BE%83%E6%96%87%E4%BB%B6%E5%B7%AE%E5%BC%82/index.html">
+<meta property="og:title" content="6.分支管理">
+<meta property="og:url" content="https://hoopoe-h.github.io/2020/04/02/6-%E5%88%86%E6%94%AF%E7%AE%A1%E7%90%86/index.html">
 <meta property="og:site_name" content="Hoopoe">
-<meta property="og:description" content="比较文件差异1.  git diff [文件名] 将工作区中的文件和暂存区对应文件进行比较 1例：git diff test.txt  2.  git diff [本地库中文件历史记录(指针)] [文件名] 将工作区中的文件和本地库历史记录比较 1234例：git diff HEAD test.txt  比较最新一次修改git diff HEAD^ text.txt 比较上一次修改git diff">
+<meta property="og:description" content="分支管理1. 什么是分支？在版本控制过程中，使用对条线同时推进多个任务。 2. 分支的好处 同时并行推进多个功能开发，提高开发效率  各个分支在开发过程中，如果某一个分支开发失败，不会对其他分支有任何影响。失败的分支删除重新开始即可。 3. 分支操作 创建分支 1git branch [分支名]   创建并切换到新分支 1git checkout -b [newBranch]  查看分支名 1gi">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2020-04-02T09:08:41.000Z">
-<meta property="article:modified_time" content="2020-04-02T09:08:53.686Z">
+<meta property="og:image" content="https://s1.ax1x.com/2020/04/02/GYSNWV.png">
+<meta property="og:image" content="https://s1.ax1x.com/2020/04/02/GYStJ0.png">
+<meta property="og:image" content="https://s1.ax1x.com/2020/04/02/GYSdQU.png">
+<meta property="og:image" content="https://s1.ax1x.com/2020/04/02/GYSUzT.png">
+<meta property="og:image" content="https://s1.ax1x.com/2020/04/02/GYSYiq.png">
+<meta property="og:image" content="https://s1.ax1x.com/2020/04/02/GYSwyF.png">
+<meta property="og:image" content="https://s1.ax1x.com/2020/04/02/GYScJx.png">
+<meta property="og:image" content="https://s1.ax1x.com/2020/04/02/GYSzwj.png">
+<meta property="og:image" content="https://s1.ax1x.com/2020/04/02/GYpEXF.png">
+<meta property="og:image" content="https://s1.ax1x.com/2020/04/02/GYpZm4.png">
+<meta property="og:image" content="https://s1.ax1x.com/2020/04/02/GYCtJI.png">
+<meta property="article:published_time" content="2020-04-02T09:31:02.000Z">
+<meta property="article:modified_time" content="2020-04-02T09:47:02.234Z">
 <meta property="article:author" content="Hoopoe">
 <meta property="article:tag" content="Git">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://s1.ax1x.com/2020/04/02/GYSNWV.png">
   
     <link rel="alternative" href="/atom.xml" title="Hoopoe" type="application/atom+xml">
   
@@ -176,14 +188,14 @@
               class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-5-比较文件差异" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-6-分支管理" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
   
   
     <h1 class="article-title" itemprop="name">
-      5.比较文件差异
+      6.分支管理
     </h1>
   
 
@@ -195,8 +207,8 @@
               <i class="icon-smile icon"></i> 阅读数：<span id="busuanzi_value_page_pv"></span>次
         </span>
 
-<a href="/2020/04/02/5-%E6%AF%94%E8%BE%83%E6%96%87%E4%BB%B6%E5%B7%AE%E5%BC%82/" class="archive-article-date">
-        <time datetime="2020-04-02T09:08:41.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-02</time>
+<a href="/2020/04/02/6-%E5%88%86%E6%94%AF%E7%AE%A1%E7%90%86/" class="archive-article-date">
+        <time datetime="2020-04-02T09:31:02.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-02</time>
 </a>
 
   
@@ -209,7 +221,7 @@
       <!-- 百度字体平台:http://fontstore.baidu.com/static/editor/index.html -->
       <i class="icon-statistics"></i>
       <span class="post-meta-item-text"> 字数统计:</span>
-      <span class="post-count">135字</span>
+      <span class="post-count">538字</span>
     </span>
   </span>
 
@@ -218,7 +230,7 @@
     <span class="post-meta-item-icon">
       <i class="icon-book icon"></i>
       <span class="post-meta-item-text"> 阅读时长≈</span>
-      <span class="post-count">1分</span>
+      <span class="post-count">2分</span>
     </span>
   </span>
 </div>
@@ -229,13 +241,89 @@
   
   <div class="article-entry" itemprop="articleBody">
     
-    <h2 id="比较文件差异"><a href="#比较文件差异" class="headerlink" title="比较文件差异"></a>比较文件差异</h2><h4 id="1-git-diff-文件名"><a href="#1-git-diff-文件名" class="headerlink" title="1.  git diff [文件名] "></a>1. <code> git diff [文件名] </code></h4><p>将工作区中的文件和暂存区对应文件进行比较</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">例：git diff test.txt</span><br></pre></td></tr></table></figure>
-
-<h4 id="2-git-diff-本地库中文件历史记录-指针-文件名"><a href="#2-git-diff-本地库中文件历史记录-指针-文件名" class="headerlink" title="2.  git diff [本地库中文件历史记录(指针)] [文件名] "></a>2. <code> git diff [本地库中文件历史记录(指针)] [文件名] </code></h4><p>将工作区中的文件和本地库历史记录比较</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">例：</span><br><span class="line">git diff HEAD test.txt  比较最新一次修改</span><br><span class="line">git diff HEAD^ text.txt 比较上一次修改</span><br><span class="line">git diff 46e8eaa test.txt 比较历史记录号为 46e8eaa的修改</span><br></pre></td></tr></table></figure>
-
-<h4 id="3-git-diff"><a href="#3-git-diff" class="headerlink" title="3.  git diff "></a>3. <code> git diff </code></h4><p>不带文件名，比较所有文件的修改</p>
+    <h2 id="分支管理"><a href="#分支管理" class="headerlink" title="分支管理"></a>分支管理</h2><h4 id="1-什么是分支？"><a href="#1-什么是分支？" class="headerlink" title="1. 什么是分支？"></a>1. 什么是分支？</h4><p>在版本控制过程中，使用对条线同时推进多个任务。</p>
+<h4 id="2-分支的好处"><a href="#2-分支的好处" class="headerlink" title="2. 分支的好处"></a>2. 分支的好处</h4><ul>
+<li><p>同时并行推进多个功能开发，提高开发效率</p>
+</li>
+<li><p>各个分支在开发过程中，如果某一个分支开发失败，不会对其他分支有任何影响。失败的分支删除重新开始即可。</p>
+<h4 id="3-分支操作"><a href="#3-分支操作" class="headerlink" title="3. 分支操作"></a>3. 分支操作</h4></li>
+<li><p><strong>创建分支</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git branch [分支名]</span><br></pre></td></tr></table></figure>
+<p><a href="https://imgchr.com/i/GYSNWV" target="_blank" rel="noopener"><img src="https://s1.ax1x.com/2020/04/02/GYSNWV.png" alt="GYSNWV.png"></a></p>
+</li>
+<li><p><strong>创建并切换到新分支</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git checkout -b [newBranch]</span><br></pre></td></tr></table></figure>
+</li>
+<li><p><strong>查看分支名</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git branch -v</span><br></pre></td></tr></table></figure>
+<p><a href="https://imgchr.com/i/GYStJ0" target="_blank" rel="noopener"><img src="https://s1.ax1x.com/2020/04/02/GYStJ0.png" alt="GYStJ0.png"></a><br>有两个分支，<code>hot_fix</code>和<code>master</code>，我们目前在 <code>master</code> 分支</p>
+</li>
+<li><p><strong>切换分支名</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git checkout [分支名]</span><br></pre></td></tr></table></figure>
+<p><a href="https://imgchr.com/i/GYSdQU" target="_blank" rel="noopener"><img src="https://s1.ax1x.com/2020/04/02/GYSdQU.png" alt="GYSdQU.png"></a></p>
+</li>
+<li><p><strong>合并分支</strong></p>
+<ul>
+<li>第一步：切换到接受修改的分支(被合并的分支，增加新内容)上  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git checkout [被合并的分支名(主)]</span><br></pre></td></tr></table></figure></li>
+<li>第二步：执行 merge 命令  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git merge [要合并过来的分支名]</span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+<li><p><strong>解决冲突</strong><br>在不同分支修改同一文件之后合并，出现冲突<br><a href="https://imgchr.com/i/GYSUzT" target="_blank" rel="noopener"><img src="https://s1.ax1x.com/2020/04/02/GYSUzT.png" alt="GYSUzT.png"></a><br>自动合并失败，转为手动合并</p>
+<ul>
+<li>冲突的表现<br><a href="https://imgchr.com/i/GYSYiq" target="_blank" rel="noopener"><img src="https://s1.ax1x.com/2020/04/02/GYSYiq.png" alt="GYSYiq.png"></a></li>
+<li>冲突的解决<ul>
+<li>第一步：编辑文件，删除特殊符号</li>
+<li>第二步：把文件修改到满意的程度，保存退出</li>
+<li>第三步：<code>git add [文件名]</code></li>
+<li>第四步：<code>git commit -m &quot;日志信息&quot;</code><ul>
+<li><strong>注意：此时的 <code>commit</code> 一定不能带具体文件名</strong></li>
+</ul>
+</li>
+<li>图示： <ul>
+<li><ol>
+<li>删除特殊符号<br><a href="https://imgchr.com/i/GYSwyF" target="_blank" rel="noopener"><img src="https://s1.ax1x.com/2020/04/02/GYSwyF.png" alt="GYSwyF.png"></a></li>
+</ol>
+</li>
+<li><ol start="2">
+<li>修改值理想状态，保存退出<br><a href="https://imgchr.com/i/GYScJx" target="_blank" rel="noopener"><img src="https://s1.ax1x.com/2020/04/02/GYScJx.png" alt="GYScJx.png"></a></li>
+</ol>
+</li>
+<li><ol start="3">
+<li>查看状态<br><a href="https://imgchr.com/i/GYSzwj" target="_blank" rel="noopener"><img src="https://s1.ax1x.com/2020/04/02/GYSzwj.png" alt="GYSzwj.png"></a><br>提示：仍为合并，需要用 <code>git add [文件名]</code> 进行合并</li>
+</ol>
+</li>
+<li><ol start="4">
+<li>执行 <code>git add</code> 命令之后再次查看状态<br><a href="https://imgchr.com/i/GYpEXF" target="_blank" rel="noopener"><img src="https://s1.ax1x.com/2020/04/02/GYpEXF.png" alt="GYpEXF.png"></a></li>
+</ol>
+</li>
+<li><ol start="5">
+<li>执行 <code>git commit</code>不能带文件名，否则报错，如下图<br><a href="https://imgchr.com/i/GYpZm4" target="_blank" rel="noopener"><img src="https://s1.ax1x.com/2020/04/02/GYpZm4.png" alt="GYpZm4.png"></a></li>
+</ol>
+</li>
+<li><ol start="6">
+<li>正确执行合并冲突的 <code>commit</code> 命令<br><code>例：git commit -m &quot;解决 apple.txt 的冲突&quot;</code><br><a href="https://imgchr.com/i/GYCtJI" target="_blank" rel="noopener"><img src="https://s1.ax1x.com/2020/04/02/GYCtJI.png" alt="GYCtJI.png"></a></li>
+</ol>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>在本地新建一个分支： <code>git branch newBranch</code></p>
+<p>切换到你的新分支: <code>git checkout newBranch</code></p>
+<p>创建并切换到新分支： <code>git checkout -b newBranch</code></p>
+<p>将新分支发布在github上： <code>git push origin newBranch</code></p>
+<p>在本地删除一个分支： <code>git branch -d newBranch</code></p>
+</blockquote>
+<blockquote>
+<p>在github远程端删除一个分支： <code>git push origin :newBranch</code>   (分支名前的冒号代表删除)</p>
+</blockquote>
+<blockquote>
+<p>使用Git下载指定分支命令为：<code>git clone -b [分支名] [仓库地址]</code></p>
+</blockquote>
 
     
 
@@ -271,18 +359,9 @@
 
 <nav id="article-nav">
   
-    <a href="/2020/04/02/6-%E5%88%86%E6%94%AF%E7%AE%A1%E7%90%86/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          6.分支管理
-        
-      </div>
-    </a>
   
-  
-    <a href="/2020/04/02/4-%E6%B0%B8%E4%B9%85%E5%88%A0%E9%99%A4%E6%96%87%E4%BB%B6%E5%90%8E%E6%89%BE%E5%9B%9E/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">4.永久删除文件后找回</div>
+    <a href="/2020/04/02/5-%E6%AF%94%E8%BE%83%E6%96%87%E4%BB%B6%E5%B7%AE%E5%BC%82/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">5.比较文件差异</div>
       <i class="icon-circle-right"></i>
     </a>
   
