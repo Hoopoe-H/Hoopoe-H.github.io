@@ -83,6 +83,8 @@
 			
 				<li><a href="/tags/Git/" target="_blank">Git</a></li>
 			
+				<li><a href="/tags/Linux/" target="_blank">Linux</a></li>
+			
 			</ul>
 		</nav>
 		<nav class="header-smart-menu">
@@ -147,6 +149,8 @@
 			
 				
 			
+				
+			
 			
 			
 			<nav class="header-nav">
@@ -160,12 +164,14 @@
 			</nav>
 
 			<nav class="header-menu js-header-menu">
-				<ul style="width: 50%">
+				<ul style="width: 70%">
 				
 				
-					<li style="width: 50%"><a href="/">主页</a></li>
+					<li style="width: 33.333333333333336%"><a href="/">主页</a></li>
 		        
-					<li style="width: 50%"><a href="/tags/Git/">Git</a></li>
+					<li style="width: 33.333333333333336%"><a href="/tags/Git/">Git</a></li>
+		        
+					<li style="width: 33.333333333333336%"><a href="/tags/Linux/">Linux</a></li>
 		        
 				</ul>
 			</nav>
@@ -182,6 +188,131 @@
           </div>
           <div id="js-content" class="content-ll">
             
+
+  
+    <article id="post-1-Git文件初始化及设置签名" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+  
+  
+    <h1 itemprop="name">
+	
+	  <a class="article-title" href="/2020/03/17/1-Git%E6%96%87%E4%BB%B6%E5%88%9D%E5%A7%8B%E5%8C%96%E5%8F%8A%E8%AE%BE%E7%BD%AE%E7%AD%BE%E5%90%8D/" target="_blank">1.Git文件初始化及设置签名</a>
+  
+    </h1>
+  
+
+
+  
+  
+<a href="/2020/03/17/1-Git%E6%96%87%E4%BB%B6%E5%88%9D%E5%A7%8B%E5%8C%96%E5%8F%8A%E8%AE%BE%E7%BD%AE%E7%AD%BE%E5%90%8D/" class="archive-article-date">
+        <time datetime="2020-03-17T04:25:59.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-17</time>
+</a>
+
+  
+  
+    
+
+  
+  </header>
+  
+  <div class="article-entry" itemprop="articleBody">
+    
+    <h2 id="1-本地库初始化"><a href="#1-本地库初始化" class="headerlink" title="1. 本地库初始化"></a>1. 本地库初始化</h2><ul>
+<li><strong>命令：</strong> <code>git init </code></li>
+<li><strong>初始化后的效果：</strong><br><a href="https://imgchr.com/i/GJYeOS" target="_blank" rel="noopener"><img src="https://s1.ax1x.com/2020/04/02/GJYeOS.png" alt="GJYeOS.png"></a></li>
+<li><strong>注意：</strong> <code>.git</code>目录中存放的是本地库相关的子目录和文件，不要删除，也不建议修改</li>
+</ul>
+<h2 id="2-设置签名"><a href="#2-设置签名" class="headerlink" title="2. 设置签名"></a>2. 设置签名</h2><ul>
+<li><strong>形式：</strong><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">用户名：tom</span><br><span class="line">邮  箱：tom@gmail.com</span><br></pre></td></tr></table></figure></li>
+<li><strong>作用：</strong> 区分不同开发人员的身份</li>
+<li><strong>辨析：</strong> 这里设置的签名和登陆远程库(代码托管中心)的账号、密码，没有任何关系</li>
+<li><strong>命令：</strong> <ul>
+<li>项目级别 / 仓库级别：仅在当前本地库范围内有效<ul>
+<li><code>git config user.name tom </code></li>
+<li><code>git config user.email <a href="mailto:tom@gmail.com">tom@gmail.com</a> </code><br><a href="https://imgchr.com/i/GJYZy8" target="_blank" rel="noopener"><img src="https://s1.ax1x.com/2020/04/02/GJYZy8.png" alt="GJYZy8.png"></a></li>
+<li>信息保存位置 <code>./.git/config文件</code><br><a href="https://imgchr.com/i/GJYneg" target="_blank" rel="noopener"><img src="https://s1.ax1x.com/2020/04/02/GJYneg.png" alt="GJYneg.png"></a></li>
+</ul>
+</li>
+<li>系统用户级别：登陆当前操作系统的用户范围<ul>
+<li>创建系统级别签名：<ul>
+<li><code>git config --global user.name tom</code></li>
+<li><code>git config --global user.email <a href="mailto:tom@gmail.com">tom@gmail.com</a> </code></li>
+</ul>
+</li>
+<li>系统用户信息保存位置：<ul>
+<li>cd到家目录： <code> cd ~ </code></li>
+<li>查看目录信息，包含隐藏文件 <code>ls -lA | less</code></li>
+<li>查看配置信息： <code> cat .gitconfig </code><br><a href="https://imgchr.com/i/GJYkWt" target="_blank" rel="noopener"><img src="https://s1.ax1x.com/2020/04/02/GJYkWt.png" alt="GJYkWt.png"></a>        </li>
+<li>直接查看方法(推荐)<br><a href="https://imgchr.com/i/GJYVQf" target="_blank" rel="noopener"><img src="https://s1.ax1x.com/2020/04/02/GJYVQf.png" alt="GJYVQf.png"></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>项目级别优先级：<ul>
+<li>就近原则：项目级别优先于系统用户级别，二者都有时采用项目级别的签名</li>
+<li>如果只有系统用户级别的签名，就以系统用户级别的签名为准</li>
+<li>二者都没有是不允许的</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+    
+
+    
+
+    
+
+  </div>
+  <div class="article-info article-info-index">
+    
+    
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">Git</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+    
+
+    
+    <p class="article-more-link">
+      <a class="article-more-a" href="/2020/03/17/1-Git%E6%96%87%E4%BB%B6%E5%88%9D%E5%A7%8B%E5%8C%96%E5%8F%8A%E8%AE%BE%E7%BD%AE%E7%AD%BE%E5%90%8D/">展开全文 >></a>
+    </p>
+    
+
+    
+    <div class="clearfix"></div>
+  </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
 
   
     <article id="post-Chrome-Vimium-插件常用快捷键" class="article article-type-post  article-index" itemscope itemprop="blogPost">
@@ -536,6 +667,10 @@
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">hexo博客简单教程</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">Linux</a>
               </li>
             
             <div class="clearfix"></div>
