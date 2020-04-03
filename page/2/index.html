@@ -6,14 +6,18 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://hoopoe-h.github.io">
-  <title>Archives: 2020 | Hoopoe</title>
+  <title>Hoopoe</title>
   <meta name="generator" content="hexo-theme-yilia-plus">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+    
+    <!-- <meta name="keywords" content="笔记,分享,php,前端">
+    <meta name="description" content="笔记，分享"> -->
   
   <meta name="description" content="笔记，分享">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Hoopoe">
-<meta property="og:url" content="https://hoopoe-h.github.io/archives/2020/index.html">
+<meta property="og:url" content="https://hoopoe-h.github.io/page/2/index.html">
 <meta property="og:site_name" content="Hoopoe">
 <meta property="og:description" content="笔记，分享">
 <meta property="og:locale" content="zh_CN">
@@ -178,453 +182,133 @@
           </div>
           <div id="js-content" class="content-ll">
             
-  
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2020" class="archive-year">2020</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-<a href="/2020/04/03/9-ssh%E5%85%8D%E5%AF%86%E7%99%BB%E5%BD%95/" class="archive-article-date">
-        <time datetime="2020-04-03T01:51:08.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-03</time>
-</a>
 
-        </div>
-    	 
+  
+    <article id="post-搭建hexo博客框架" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+  
   
     <h1 itemprop="name">
 	
-	  <a class="archive-article-title" href="/2020/04/03/9-ssh%E5%85%8D%E5%AF%86%E7%99%BB%E5%BD%95/" target="_blank">9.ssh免密登录</a>
+	  <a class="article-title" href="/2020/03/16/%E6%90%AD%E5%BB%BAhexo%E5%8D%9A%E5%AE%A2%E6%A1%86%E6%9E%B6/" target="_blank">搭建hexo博客框架</a>
   
     </h1>
   
 
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">Git</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-<a href="/2020/04/03/8-%E6%8E%A8%E9%80%81%E3%80%81%E5%85%8B%E9%9A%86%E3%80%81%E6%8B%89%E5%8F%96%E3%80%81%E8%A7%A3%E5%86%B3%E8%BF%9C%E7%A8%8B%E5%BA%93%E5%86%B2%E7%AA%81/" class="archive-article-date">
-        <time datetime="2020-04-03T01:38:19.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-03</time>
+  
+<a href="/2020/03/16/%E6%90%AD%E5%BB%BAhexo%E5%8D%9A%E5%AE%A2%E6%A1%86%E6%9E%B6/" class="archive-article-date">
+        <time datetime="2020-03-16T03:01:23.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-16</time>
 </a>
 
-        </div>
-    	 
   
-    <h1 itemprop="name">
-	
-	  <a class="archive-article-title" href="/2020/04/03/8-%E6%8E%A8%E9%80%81%E3%80%81%E5%85%8B%E9%9A%86%E3%80%81%E6%8B%89%E5%8F%96%E3%80%81%E8%A7%A3%E5%86%B3%E8%BF%9C%E7%A8%8B%E5%BA%93%E5%86%B2%E7%AA%81/" target="_blank">8.推送、克隆、拉取、解决远程库冲突</a>
   
-    </h1>
-  
+    
 
+  
+  </header>
+  
+  <div class="article-entry" itemprop="articleBody">
+    
+    <h3 id="1-安装-Node-js"><a href="#1-安装-Node-js" class="headerlink" title="1. 安装 Node.js"></a>1. 安装 Node.js</h3><h3 id="2-安装-Git"><a href="#2-安装-Git" class="headerlink" title="2. 安装 Git"></a>2. 安装 Git</h3><h3 id="3-切换-Node-js-的-npm-为淘宝的-cnpm"><a href="#3-切换-Node-js-的-npm-为淘宝的-cnpm" class="headerlink" title="3. 切换 Node.js 的 npm 为淘宝的 cnpm"></a>3. 切换 Node.js 的 <code>npm</code> 为淘宝的 <code>cnpm</code></h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">npm install -g cnpm --registry&#x3D;https:&#x2F;&#x2F;registry.npm.taobao.org</span><br><span class="line"></span><br><span class="line"># 测试是否安装成功</span><br><span class="line">cnpm -v</span><br></pre></td></tr></table></figure>
+<h3 id="4-用-cnpm-全局安装-hexo博客框架"><a href="#4-用-cnpm-全局安装-hexo博客框架" class="headerlink" title="4. 用 cnpm 全局安装 hexo博客框架"></a>4. 用 <code>cnpm</code> 全局安装 <code>hexo博客框架</code></h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">cnpm install -g hexo-cli</span><br><span class="line"></span><br><span class="line"># 测试是否安装成功</span><br><span class="line">hexo -v</span><br></pre></td></tr></table></figure>
+<h3 id="5-cd-到你的博客目录，没有可以-mkdir-创建"><a href="#5-cd-到你的博客目录，没有可以-mkdir-创建" class="headerlink" title="5. cd 到你的博客目录，没有可以 mkdir 创建"></a>5. cd 到你的博客目录，没有可以 <code>mkdir</code> 创建</h3><h3 id="6-初始化博客"><a href="#6-初始化博客" class="headerlink" title="6. 初始化博客"></a>6. 初始化博客</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"># linux or mac</span><br><span class="line">sudo hexo init</span><br><span class="line"></span><br><span class="line"># windows</span><br><span class="line">hexo init</span><br></pre></td></tr></table></figure>
 
-        <div class="article-info info-on-right">
-          
+<h3 id="7-启动本地预览"><a href="#7-启动本地预览" class="headerlink" title="7. 启动本地预览"></a>7. 启动本地预览</h3><ul>
+<li>hexo s 命令生成本地预览地址 <code>http://localhost:4000</code><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&quot;node&quot;  &quot;C:\Program Files\nodejs\node_global\\node_modules\hexo-cli\bin\hexo&quot; s</span><br><span class="line">INFO  Start processing</span><br><span class="line">INFO  Hexo is running at http:&#x2F;&#x2F;localhost:4000 . Press Ctrl+C to stop.</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<h3 id="8-创建一篇博客"><a href="#8-创建一篇博客" class="headerlink" title="8. 创建一篇博客"></a>8. 创建一篇博客</h3><ul>
+<li>hexo n <code>blogname</code></li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">hexo n &quot;第一篇测试文章&quot;</span><br><span class="line"></span><br><span class="line">&quot;node&quot;  &quot;C:\Program Files\nodejs\node_global\\node_modules\hexo-cli\bin\hexo&quot; n &quot;第一篇测试文章&quot;</span><br><span class="line">INFO  Created: ~\Documents\Hexo-blog\source\_posts\第一篇测试文章.md</span><br></pre></td></tr></table></figure>
+<p><strong>可以用<code>vim</code>或任意<code>markdown</code>编辑器进行文章编辑</strong></p>
+<h3 id="9-生成文章"><a href="#9-生成文章" class="headerlink" title="9. 生成文章"></a>9. 生成文章</h3><p>在生成文章前可以先用 <code>hexo clear</code>命令清除一下缓存</p>
+<p><code>hexo g</code></p>
+<h3 id="10-部署到-github"><a href="#10-部署到-github" class="headerlink" title="10. 部署到 github"></a>10. 部署到 github</h3><p><strong>1.在 github 创建一个仓库</strong></p>
+<blockquote>
+<p><strong>仓库名称必须是： 昵称 + github.io</strong></p>
+<p>如你的github昵称是tom, 则你的仓库名称为 tom.github.io(小写)</p>
+</blockquote>
+<p><strong>2.在你的本地博客目录安装一个 git 部署插件</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cnpm install --save hexo-deployer-git</span><br></pre></td></tr></table></figure>
+
+<p><strong>3.设置 <code>_config.yml</code> 文件</strong></p>
+<p>修改 #Deployment 下的内容为如下代码</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Deploy:</span><br><span class="line">    type: git</span><br><span class="line">    repo: 你的仓库地址</span><br><span class="line">    branch: master</span><br></pre></td></tr></table></figure>
+
+<p><strong>注意：</strong></p>
+<p>① 如果没有ssh绑定github，用https地址</p>
+<p>② type、repo 等命令的冒号后面必须空一格</p>
+<p><strong>4.部署到远端</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo d</span><br></pre></td></tr></table></figure>
+
+<h3 id="11-访问"><a href="#11-访问" class="headerlink" title="11.访问"></a>11.访问</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">https:&#x2F;&#x2F;tom.github.io</span><br><span class="line"></span><br><span class="line"># 注意要用 https 访问</span><br></pre></td></tr></table></figure>
+
+<h3 id="12-更换主题"><a href="#12-更换主题" class="headerlink" title="12. 更换主题"></a>12. 更换主题</h3><p>我这里用的是 <a href="https://github.com/JoeyBling/hexo-theme-yilia-plus" target="_blank" rel="noopener"><code>yilia-plus</code></a>主题，大家可以去 <a href="https://hexo.io" target="_blank" rel="noopener">hexo官网</a> 查找自己喜欢的主题进行更换</p>
+<h3 id="几个常用命令"><a href="#几个常用命令" class="headerlink" title="几个常用命令"></a>几个常用命令</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">hexo clean  #清理缓存文件</span><br><span class="line">hexo g      #生成文件</span><br><span class="line">hexo s      #启动本地服务器</span><br><span class="line">hexo d      #推送到服务器</span><br></pre></td></tr></table></figure>
+    
+
+    
+
+    
+
+  </div>
+  <div class="article-info article-info-index">
+    
+    
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">Git</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">hexo博客简单教程</a>
         		</li>
       		
 		</ul>
 	</div>
 
-          
+    
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
+    
+    <p class="article-more-link">
+      <a class="article-more-a" href="/2020/03/16/%E6%90%AD%E5%BB%BAhexo%E5%8D%9A%E5%AE%A2%E6%A1%86%E6%9E%B6/">展开全文 >></a>
+    </p>
+    
+
+    
+    <div class="clearfix"></div>
+  </div>
   </div>
 </article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-<a href="/2020/04/02/7-%E5%88%9B%E5%BB%BA%E8%BF%9C%E7%A8%8B%E5%BA%93%E5%8F%8A%E5%9C%A8%E6%9C%AC%E5%9C%B0%E5%88%9B%E5%BB%BA%E8%BF%9C%E7%A8%8B%E5%BA%93%E5%88%AB%E5%90%8D/" class="archive-article-date">
-        <time datetime="2020-04-02T10:07:26.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-02</time>
-</a>
 
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
-  
-    <h1 itemprop="name">
-	
-	  <a class="archive-article-title" href="/2020/04/02/7-%E5%88%9B%E5%BB%BA%E8%BF%9C%E7%A8%8B%E5%BA%93%E5%8F%8A%E5%9C%A8%E6%9C%AC%E5%9C%B0%E5%88%9B%E5%BB%BA%E8%BF%9C%E7%A8%8B%E5%BA%93%E5%88%AB%E5%90%8D/" target="_blank">7.创建远程库及在本地创建远程库别名</a>
-  
-    </h1>
-  
+        
+        
+    </div>
+</aside>
 
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">Git</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-<a href="/2020/04/02/6-%E5%88%86%E6%94%AF%E7%AE%A1%E7%90%86/" class="archive-article-date">
-        <time datetime="2020-04-02T09:31:02.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-02</time>
-</a>
-
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-	
-	  <a class="archive-article-title" href="/2020/04/02/6-%E5%88%86%E6%94%AF%E7%AE%A1%E7%90%86/" target="_blank">6.分支管理</a>
-  
-    </h1>
-  
 
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">Git</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-<a href="/2020/04/02/5-%E6%AF%94%E8%BE%83%E6%96%87%E4%BB%B6%E5%B7%AE%E5%BC%82/" class="archive-article-date">
-        <time datetime="2020-04-02T09:08:41.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-02</time>
-</a>
-
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-	
-	  <a class="archive-article-title" href="/2020/04/02/5-%E6%AF%94%E8%BE%83%E6%96%87%E4%BB%B6%E5%B7%AE%E5%BC%82/" target="_blank">5.比较文件差异</a>
-  
-    </h1>
-  
-
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">Git</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-<a href="/2020/04/02/4-%E6%B0%B8%E4%B9%85%E5%88%A0%E9%99%A4%E6%96%87%E4%BB%B6%E5%90%8E%E6%89%BE%E5%9B%9E/" class="archive-article-date">
-        <time datetime="2020-04-02T08:39:51.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-02</time>
-</a>
-
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-	
-	  <a class="archive-article-title" href="/2020/04/02/4-%E6%B0%B8%E4%B9%85%E5%88%A0%E9%99%A4%E6%96%87%E4%BB%B6%E5%90%8E%E6%89%BE%E5%9B%9E/" target="_blank">4.永久删除文件后找回</a>
-  
-    </h1>
-  
-
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">Git</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-<a href="/2020/04/02/3-Git%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C%E5%91%BD%E4%BB%A4/" class="archive-article-date">
-        <time datetime="2020-04-02T08:19:15.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-02</time>
-</a>
-
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-	
-	  <a class="archive-article-title" href="/2020/04/02/3-Git%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C%E5%91%BD%E4%BB%A4/" target="_blank">3.Git基本操作命令</a>
-  
-    </h1>
-  
-
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">Git</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-<a href="/2020/04/01/2-%E6%B7%BB%E5%8A%A0%E3%80%81%E6%8F%90%E4%BA%A4%E3%80%81%E6%9F%A5%E7%9C%8B%E7%8A%B6%E6%80%81%E6%93%8D%E4%BD%9C/" class="archive-article-date">
-        <time datetime="2020-04-01T09:37:28.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-01</time>
-</a>
-
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-	
-	  <a class="archive-article-title" href="/2020/04/01/2-%E6%B7%BB%E5%8A%A0%E3%80%81%E6%8F%90%E4%BA%A4%E3%80%81%E6%9F%A5%E7%9C%8B%E7%8A%B6%E6%80%81%E6%93%8D%E4%BD%9C/" target="_blank">2.添加、提交、查看状态操作</a>
-  
-    </h1>
-  
-
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">Git</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-<a href="/2020/03/17/1-Git%E6%96%87%E4%BB%B6%E5%88%9D%E5%A7%8B%E5%8C%96%E5%8F%8A%E8%AE%BE%E7%BD%AE%E7%AD%BE%E5%90%8D/" class="archive-article-date">
-        <time datetime="2020-03-17T04:25:59.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-17</time>
-</a>
-
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-	
-	  <a class="archive-article-title" href="/2020/03/17/1-Git%E6%96%87%E4%BB%B6%E5%88%9D%E5%A7%8B%E5%8C%96%E5%8F%8A%E8%AE%BE%E7%BD%AE%E7%AD%BE%E5%90%8D/" target="_blank">1.Git文件初始化及设置签名</a>
-  
-    </h1>
-  
-
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">Git</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-<a href="/2020/03/16/Chrome-Vimium-%E6%8F%92%E4%BB%B6%E5%B8%B8%E7%94%A8%E5%BF%AB%E6%8D%B7%E9%94%AE/" class="archive-article-date">
-        <time datetime="2020-03-16T09:08:09.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-16</time>
-</a>
-
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-	
-	  <a class="archive-article-title" href="/2020/03/16/Chrome-Vimium-%E6%8F%92%E4%BB%B6%E5%B8%B8%E7%94%A8%E5%BF%AB%E6%8D%B7%E9%94%AE/" target="_blank">Chrome Vimium 插件常用快捷键</a>
-  
-    </h1>
-  
-
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">Chrome-vimium</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
   
   
-    </div></section>
-  
-
-    
     <nav id="page-nav">
-      <span class="page-number current">1</span><a class="page-number" href="/archives/2020/page/2/">2</a><a class="extend next" rel="next" href="/archives/2020/page/2/">Next &amp;raquo;</a>
+      <a class="extend prev" rel="prev" href="/">&amp;laquo; Prev</a><a class="page-number" href="/">1</a><span class="page-number current">2</span>
     </nav>
   
 
@@ -666,9 +350,9 @@
     <script>
 	var yiliaConfig = {
 		mathjax: false,
-		isHome: false,
+		isHome: true,
 		isPost: false,
-		isArchive: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: true,
