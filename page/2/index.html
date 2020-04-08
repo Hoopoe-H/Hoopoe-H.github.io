@@ -190,118 +190,6 @@
             
 
   
-    <article id="post-2-添加、提交、查看状态操作" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-  
-  
-    <h1 itemprop="name">
-	
-	  <a class="article-title" href="/2020/04/01/2-%E6%B7%BB%E5%8A%A0%E3%80%81%E6%8F%90%E4%BA%A4%E3%80%81%E6%9F%A5%E7%9C%8B%E7%8A%B6%E6%80%81%E6%93%8D%E4%BD%9C/" target="_blank">2.添加、提交、查看状态操作</a>
-  
-    </h1>
-  
-
-
-  
-  
-<a href="/2020/04/01/2-%E6%B7%BB%E5%8A%A0%E3%80%81%E6%8F%90%E4%BA%A4%E3%80%81%E6%9F%A5%E7%9C%8B%E7%8A%B6%E6%80%81%E6%93%8D%E4%BD%9C/" class="archive-article-date">
-        <time datetime="2020-04-01T09:37:28.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-01</time>
-</a>
-
-  
-  
-    
-
-  
-  </header>
-  
-  <div class="article-entry" itemprop="articleBody">
-    
-    <ul>
-<li><p><strong>查看状态：</strong>  <code>git status</code><br><a href="https://imgchr.com/i/GJgTgS" target="_blank" rel="noopener"><img src="https://s1.ax1x.com/2020/04/02/GJgTgS.png" alt="没有文件也没有提交的状态"></a><br>没有提交过、没有文件可提交</p>
-</li>
-<li><p><strong>通过vim创建<code>test.txt</code>文件，再次查看状态</strong><br><a href="https://imgchr.com/i/GJgo38" target="_blank" rel="noopener"><img src="https://s1.ax1x.com/2020/04/02/GJgo38.png" alt="创建文件后的状态"></a><br>有文件未提交，没有提交过</p>
-</li>
-<li><p><strong>通过 <code>git add </code> 命令添加</strong><br><a href="https://imgchr.com/i/GJgfAI" target="_blank" rel="noopener"><img src="https://s1.ax1x.com/2020/04/02/GJgfAI.png" alt="GJgfAI.png"></a></p>
-</li>
-<li><p><strong>再次查看状态</strong><br><a href="https://imgchr.com/i/GJg2Bd" target="_blank" rel="noopener"><img src="https://s1.ax1x.com/2020/04/02/GJg2Bd.png" alt="GJg2Bd.png"></a><br>有新文件被提交</p>
-</li>
-<li><p><strong>从暂存区删除提交的文件，恢复未提交状态：<code>git rm --cashed file</code></strong><br><a href="https://imgchr.com/i/GJgI9f" target="_blank" rel="noopener"><img src="https://s1.ax1x.com/2020/04/02/GJgI9f.png" alt="GJgI9f.png"></a></p>
-</li>
-<li><p><strong>提交：</strong> <code>git commit test.txt</code></p>
-<ul>
-<li>显示以下界面<br><a href="https://imgchr.com/i/GJg7jg" target="_blank" rel="noopener"><img src="https://s1.ax1x.com/2020/04/02/GJg7jg.png" alt="GJg7jg.png"></a></li>
-<li>之后vim显示以下界面，需要填写commit信息。在最上面填写并保存退出。<br><a href="https://imgchr.com/i/GJgqBj" target="_blank" rel="noopener"><img src="https://s1.ax1x.com/2020/04/02/GJgqBj.png" alt="GJgqBj.png"></a></li>
-<li><strong>成功之后显示以下界面，表示提交成功</strong><br><a href="https://imgchr.com/i/GJgLHs" target="_blank" rel="noopener"><img src="https://s1.ax1x.com/2020/04/02/GJgLHs.png" alt="GJgLHs.png"></a></li>
-<li>再次查看状态 <code>git status</code><br><a href="https://imgchr.com/i/GJgXEn" target="_blank" rel="noopener"><img src="https://s1.ax1x.com/2020/04/02/GJgXEn.png" alt="GJgXEn.png"></a></li>
-</ul>
-</li>
-<li><p>对文件进行修改，再次查看状态</p>
-<ul>
-<li>用vim修改文件后的提示<br><a href="https://imgchr.com/i/GJgjNq" target="_blank" rel="noopener"><img src="https://s1.ax1x.com/2020/04/02/GJgjNq.png" alt="GJgjNq.png"></a></li>
-<li>再次 add ，查看状态<br><a href="https://imgchr.com/i/GJgzCV" target="_blank" rel="noopener"><img src="https://s1.ax1x.com/2020/04/02/GJgzCV.png" alt="GJgzCV.png"></a></li>
-<li>直接在命令行中添加commit信息，不需要再打开vim<br><a href="https://imgchr.com/i/GJ2S3T" target="_blank" rel="noopener"><img src="https://s1.ax1x.com/2020/04/02/GJ2S3T.png" alt="GJ2S3T.png"></a></li>
-</ul>
-</li>
-</ul>
-
-    
-
-    
-
-    
-
-  </div>
-  <div class="article-info article-info-index">
-    
-    
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">Git</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-    
-
-    
-    <p class="article-more-link">
-      <a class="article-more-a" href="/2020/04/01/2-%E6%B7%BB%E5%8A%A0%E3%80%81%E6%8F%90%E4%BA%A4%E3%80%81%E6%9F%A5%E7%9C%8B%E7%8A%B6%E6%80%81%E6%93%8D%E4%BD%9C/">展开全文 >></a>
-    </p>
-    
-
-    
-    <div class="clearfix"></div>
-  </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
     <article id="post-1-Git文件初始化及设置签名" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -783,10 +671,6 @@
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">Linux</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">temp</a>
               </li>
             
             <div class="clearfix"></div>
